@@ -3,6 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
+import crypto from "../../Assets/Projects/crypto.png";
+import location from "../../Assets/Projects/location.png";
+import threads from "../../Assets/Projects/threads.png";
+import active from "../../Assets/Projects/active.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
@@ -23,49 +27,51 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={threads}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Threads-App"
+              description="Designed a dynamic thread app, leveraging React, Next.js, TypeScript, and MongoDB. Bolstered security with Clerk's authentication, while introducing an inventive user-driven communities feature. This app redefines social interaction, offering an immersive and secure platform for meaningful discussions and connections."
+              ghLink="https://github.com/vamshi99145/threads_app"
+              demoLink="https://threads-app-jade.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={crypto}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Cryptoverse"
+              description="Developed a fast and efficient web app on GitHub using HTML, CSS, React JS, Redux, and JavaScript. Integrated Rapid API for seamless user experience, including ranking, daily change, top 100 cryptos, social media links, and news. Leveraged Axios, Chart JS, Millify, and React Router Dom for real-time data from Rapid API. Met client's needs with top-notch problem-solving and web development skills.
+
+              "
+              ghLink="https://github.com/vamshi99145/cryptoverse"
+              demoLink="https://vamshi99145.github.io/cryptoverse/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={active}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Active-coders"
+              description="A coding resource hub featuring Data Structures, Open Source, Projects, Computer Fundamentals, Competitive Programming, Languages, Coding Contests, System Design, LinkedIn Influencers, and job-related YouTube channels. Aided 50+ students in adopting correct learning paths. Tech: HTML, CSS, Bootstrap."
+              ghLink="https://github.com/vamshi99145/Active-coders"
+              demoLink="https://vamshi99145.github.io/Active-coders/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={location}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Location-privacy-using-data-structures"
+              description=". Designed privacy solutions for database-based cognitive radio networks (CRNs), maintaining spectrum access. Leveraged probabilistic set membership data structures for efficient spectrum DB management, safeguarding SUs' location privacy. Devised a secure two-party protocol with low communication overhead. Also, introduced an alternate scheme, minimizing overhead through an extra entity for spectrum data retrieval. Tech: Java, MySQL."
+              ghLink="https://github.com/vamshi99145/location-privacy-using-data-structures"
+              // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
@@ -86,7 +92,7 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
